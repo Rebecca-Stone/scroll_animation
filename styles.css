@@ -1,10 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
-
-body {
+* body {
   background-color: #efedd6;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -14,12 +25,10 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
-h1 {
+* body h1 {
   margin: 10px;
 }
-
-.box {
+* body .box {
   background-color: steelblue;
   color: #fff;
   display: flex;
@@ -33,15 +42,12 @@ h1 {
   transform: translateX(400%);
   transition: transform 0.4s ease;
 }
-
-.box:nth-of-type(even) {
+* body .box:nth-of-type(even) {
   transform: translateX(-400%);
 }
-
-.box.show {
-  transform: translateX(0);
-}
-
-.box h2 {
+* body .box h2 {
   font-size: 45px;
+}
+* body .box.show {
+  transform: translateX(0);
 }
